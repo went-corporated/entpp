@@ -1,0 +1,50 @@
+{
+    "manifest_version": 2,
+    "name": "EntPp",
+    "version": "1.0.0.0",
+    "description": "Modernisez votre E.N.T. en 2 clics : installer l'extension, ajouter au navigateur.",
+
+    "icons": {
+        "48": "icons/ent-48.png",
+        "96": "icons/ent-96.png"
+    },
+
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "webNavigation",
+        "webRequest",
+        "storage",
+        "unlimitedStorage",
+        "menus",
+        "contextMenus"
+    ],
+
+    "browser_action": {
+        "default_popup": "./popup/popup.html",
+        "default_title": "EntPp"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://*.ent.auvergnerhonealpes.fr/*"],
+            "css": [
+                "variables.css","modify/easter-eggs.css",
+                "modify/fonts.css","modify/scrollbar.css","modify/shadow.css",
+                "modify/rgb-burger.css","modify/tabs.css","modify/taf-container.css",
+                "modify/selection.css", "modify/cursor-pointer.css", "modify/links.css"
+            ]
+        }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "entpp@wentlab.org",
+          "strict_min_version": "90.0"
+        }
+    }
+}

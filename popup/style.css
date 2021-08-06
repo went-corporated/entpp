@@ -1,0 +1,197 @@
+#welcome_screen{
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: white;
+    z-index: 100;
+    margin: 0; padding: 0;
+    border: none; outline: none;
+    display: flex;
+    align-items: center; justify-content: center;
+    flex-direction: column;
+    transform: translateX(0%);
+    opacity: 0;
+    animation: welcomeScreenFrame 0s forwards;
+}
+
+#welcome_screen>img{
+    width: 125px;
+    pointer-events: none;
+    transform: translateY(17.5px);
+    /* animation: welcomeScreenImage 2.5s forwards; */
+}
+
+#welcome_screen_title{
+    /* display: none; */
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+    transform: translateY(-17.5px);
+    opacity: 1;
+    /* animation: welcomeScreenText 2.5s forwards; */
+}
+
+@keyframes welcomeScreenFrame{
+    from{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 0;
+    }
+    96%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes welcomeScreenImage{
+    from{
+        transform: translateY(25px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes welcomeScreenText{
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+#welcome_screen_footer{
+    position: fixed;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: rgb(218, 218, 218);
+    margin: 0; padding: 0;
+    display: flex;
+    align-items: center; justify-content: center;
+}
+
+#home{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    margin: 0; padding: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+/* home_column_left */
+#home_column_left{
+    position: absolute;
+    top: 0; left: 0;
+    width: 50%;
+    height: 100%;
+    margin: 0; padding: 0;
+}
+
+#home_column_left_header{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 50%;
+    margin: 0; padding: 0;
+    padding-left: 20px; padding-right: 20px;
+}
+
+#home_column_left_header_title{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#home_column_left_header_infos{
+    margin-top: -15px;
+}
+
+#home_column_left_header_version{
+    display: inline;
+    float: inline-start;
+}
+
+#home_column_left_header_author{
+    float: inline-end;
+    display: inline;
+}
+
+#home_column_left_links{
+    position: absolute;
+    top: 50%; left: 0;
+    width: 100%; height: 50%;
+    margin: 0; padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+#home_column_left_links>a{
+    background-color: white;
+    /* border: 1px solid rgb(231, 231, 231); */
+    width: 75%;
+    margin: auto;
+    height: 45px;
+    display: flex;
+    align-items: center; justify-content: center;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: .15s linear;
+}
+#home_column_left_links>a:hover{
+    background-color: rgba(172, 45, 45, 0.288);
+    color: rgb(172, 45, 45);
+    box-shadow: 0 0 15px rgba(172, 45, 45, 0.288);
+}
+/* endsection : home_column_left */
+
+/* home_column_right */
+#home_column_right{
+    position: absolute;
+    top: 0; left: 50%;
+    width: 50%;
+    height: 100%;
+    margin: 0; padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home_column_right>a{
+    background-color: white;
+    width: 90%;
+    height: 75px;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 19px;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 rgba(197, 197, 197, 0.158);
+    transition: .3s linear;
+}
+#home_column_right>a:hover{
+    box-shadow: 0 0 25px 2.5px rgba(197, 197, 197, .4);
+}
+
+.home-column-right-a-desc{
+    display: block;
+    font-size: 12.5px;
+    color: rgb(63, 63, 63);
+}
+/* endsection : home_column_right */
