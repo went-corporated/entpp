@@ -3,6 +3,7 @@
     "name": "EntPp",
     "version": "1.0.0.0",
     "description": "Modernisez votre E.N.T. en 2 clics : installer l'extension, ajouter au navigateur.",
+    "author": "Went Lab",
 
     "icons": {
         "48": "icons/ent-48.png",
@@ -16,8 +17,7 @@
         "webRequest",
         "storage",
         "unlimitedStorage",
-        "menus",
-        "contextMenus"
+        "menus"
     ],
 
     "browser_action": {
@@ -44,7 +44,7 @@
     "browser_specific_settings": {
         "gecko": {
           "id": "entpp@wentlab.org",
-          "strict_min_version": "90.0"
+          "strict_min_version": "91.0"
         }
     }
 }
