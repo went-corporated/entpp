@@ -6,8 +6,8 @@
     "author": "Went Lab",
 
     "icons": {
-        "48": "icons/ent-48.png",
-        "96": "icons/ent-96.png"
+        "48": "./logo-a.png",
+        "96": "./logo-a.png"
     },
 
     "permissions": [
@@ -31,13 +31,18 @@
 
     "content_scripts": [
         {
-            "matches": ["https://*.ent.auvergnerhonealpes.fr/*"],
+            "matches": [
+                "https://*.ent.auvergnerhonealpes.fr/*",
+                "<all_urls>"
+            ],
             "css": [
                 "variables.css","modify/easter-eggs.css",
-                "modify/fonts.css","modify/scrollbar.css","modify/shadow.css",
-                "modify/rgb-burger.css","modify/tabs.css","modify/taf-container.css",
-                "modify/selection.css", "modify/cursor-pointer.css", "modify/links.css"
-            ]
+                "modify/fonts.css","modify/scrollbar.css",
+                "modify/burger.css","modify/tabs.css","modify/taf-container.css",
+                "modify/selection.css", "modify/cursor-pointer.css", "modify/links.css",
+                "modify/main.css"
+            ],
+            "js": [ "./modify-js/infobox.js" ]
         }
     ],
 
