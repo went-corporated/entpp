@@ -11,7 +11,7 @@
     flex-direction: column;
     transform: translateX(0%);
     opacity: 0;
-    animation: welcomeScreenFrame 0s forwards;
+    animation: welcomeScreenFrame 3.5s forwards;
 }
 
 #welcome_screen>img{
