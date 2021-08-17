@@ -1,7 +1,20 @@
 const infobox = document.createElement("BUTTON");
-infobox.innerHTML = "Merci d'utiliser EntPp<br>-------------------------------------------------------<br>Tip de la semaine (clique pour l'historique)<br><em>\"Commencez à coder en apprenant le JavaScript !\"</em>";
-infobox.style = "cursor: pointer; background-color: white; color: black; display: block; padding: 1rem 2rem 1rem 1rem; position: absolute; box-sizing: inherit; top: 0; left: 0; border: none; text-align: left;";
+infobox.innerHTML = "<b>Merci d'utiliser EntPp</b><br>-------------------------------------------------------<br>Tip de la semaine (clique pour l'historique)<br><em>\"Commencez à coder en apprenant le JavaScript !\"</em>";
+infobox.style = "z-index: 100000000000000000000; cursor: pointer; background-color: white; color: black; display: block; padding: 1rem 2rem 1rem 1rem; position: absolute; box-sizing: inherit; top: 50px; left: 50px; border: 5px solid black; text-align: left; box-shadow: 0 0 50px 0 rgba(100, 100, 100, 1);";
 document.body.appendChild(infobox);
 infobox.onclick = function(){
-    window.open('https://www.google.com');
+    alert(""
+    +
+    "[1 - 12 août] Commencez à coder en apprenant le JavaScript !\n"
+    // +
+    // "[1 - 12 août] Commencez à coder en apprenant le JavaScript !\n"
+    // +
+    // "[1 - 12 août] Commencez à coder en apprenant le JavaScript !\n"
+    // +
+    // "[1 - 12 août] Commencez à coder en apprenant le JavaScript !\n"
+    // +
+    // "[1 - 12 août] Commencez à coder en apprenant le JavaScript !\n"
+    // +
+    // "[1 - 12 août] Commencez à coder en apprenant le JavaScript !\n"
+    );
 }

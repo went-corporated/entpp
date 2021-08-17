@@ -17,7 +17,8 @@
         "webRequest",
         "storage",
         "unlimitedStorage",
-        "menus"
+        "menus",
+        "notifications"
     ],
 
     "browser_action": {
@@ -40,16 +41,16 @@
                 "modify/fonts.css","modify/scrollbar.css",
                 "modify/burger.css","modify/tabs.css","modify/taf-container.css",
                 "modify/selection.css", "modify/cursor-pointer.css", "modify/links.css",
-                "modify/main.css"
-            ],
-            "js": [ "./modify-js/infobox.js" ]
+                "modify/main.css", "./modify/pupil-infos.css", "./modify/panel.css",
+                "./modify/msg.css", "./modify/close-btn.css"
+            ]
         }
     ],
 
     "browser_specific_settings": {
         "gecko": {
           "id": "entpp@wentlab.org",
-          "strict_min_version": "91.0"
+          "strict_min_version": "92.0"
         }
     }
 }

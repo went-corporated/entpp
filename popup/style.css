@@ -17,7 +17,7 @@
 #welcome_screen>img{
     width: 125px;
     pointer-events: none;
-    transform: translateY(17.5px);
+    transform: translateY(10px);
     /* animation: welcomeScreenImage 2.5s forwards; */
 }
 
@@ -26,7 +26,7 @@
     color: black;
     font-size: 35px;
     font-weight: 600;
-    transform: translateY(-17.5px);
+    transform: translateY(-10px);
     opacity: 1;
     /* animation: welcomeScreenText 2.5s forwards; */
 }

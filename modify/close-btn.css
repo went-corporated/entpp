@@ -1,0 +1,14 @@
+.close{
+    border: 1px solid red;
+    padding-left: 25px; padding-right: 25px;
+    padding-top: 10px; padding-bottom: 10px;
+    background-color: white;
+    color: red;
+    border-radius: 4px;
+    font-size: 30px;
+    transition: .15s;
+}
+.close:hover{
+    background-color: red;
+    color: white;
+}
