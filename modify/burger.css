@@ -20,14 +20,20 @@
     background-size: 1600% 1600%;
 } */
 
-.services-list__item>a{
-    border-radius: 1rem;
+.services-shortcut__link{
+    border-radius: 100px !important;
+    transition: .3s !important;
+    transform: translateX(-2px);
+}
+.services-shortcut__link:hover{
+    transform: translateX(2px);
 }
 
 .services-list__group-name{
-    border-radius: 0px !important;
+    border-radius: 0 !important;
+    transition: .3s !important;
 }
 
-.services-list__item>a>span{
+.services-shortcut__label{
     text-shadow: none !important;
 }
