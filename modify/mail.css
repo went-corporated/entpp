@@ -1,0 +1,12 @@
+#titreCommunication{
+    font-family: 'Prompt';
+}
+
+.js-message>*>*>*{
+    font-family: 'Barlow Light' !important;
+    font-size: 15px;
+}
+
+.js-message>*>*>*>*{
+    font-family: 'Barlow Medium' !important;
+}

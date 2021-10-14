@@ -3,3 +3,32 @@
     font-family: 'Poppins', sans-serif;
     scrollbar-width: thin;
 }
+
+strong{
+    font-family: 'Poppins Medium';
+    font-weight: 100;
+}
+
+.btn--primary{
+    border-radius: 20px !important;
+    border: none !important;
+    margin: 0 !important; padding: 0 !important;
+    background-color: blueviolet !important;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5) !important;
+    height: 40px !important;
+    width: max-content !important;
+    padding-left: 15px !important; padding-right: 15px !important;
+    transition: .3s !important;
+}
+.btn--primary:active{
+    transform: scale(.95) !important;
+    transition: 0s !important;
+}
+
+#button-submit{
+    margin-top: 10px !important;
+}
+
+.js-afficherNouveauMessage{
+    margin-top: -5px !important;
+}

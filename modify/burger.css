@@ -12,6 +12,7 @@
 
 .burger{
     color: white !important;
+    user-select: none !important;
 }
 /* .burger:hover{
     color: white !important;
@@ -22,18 +23,20 @@
 
 .services-shortcut__link{
     border-radius: 100px !important;
-    transition: .3s !important;
+    /* transition: .3s !important; */
     transform: translateX(-2px);
-}
-.services-shortcut__link:hover{
-    transform: translateX(2px);
+    font-weight: 100;
 }
 
 .services-list__group-name{
     border-radius: 0 !important;
-    transition: .3s !important;
+    /* transition: .3s !important; */
 }
 
 .services-shortcut__label{
     text-shadow: none !important;
+}
+
+.menu{
+    user-select: none !important;
 }

@@ -42,7 +42,7 @@
                 "modify/burger.css","modify/tabs.css","modify/taf-container.css",
                 "modify/selection.css", "modify/cursor-pointer.css", "modify/links.css",
                 "modify/main.css", "./modify/pupil-infos.css", "./modify/panel.css",
-                "./modify/msg.css", "./modify/close-btn.css"
+                "./modify/msg.css", "./modify/close-btn.css", "./modify/mail.css"
             ]
         }
     ],
